@@ -13,6 +13,10 @@ app.get('/', (req, res) => {
 app.use('/api', api);
 // app.use(cors());
 
-app.listen(process.env.PORT || 3000, () => {
-    console.log('Server is running');
+app.listen(PORT, () => {
+    console.log(`Listening to http://localhost:${PORT}`);
 });
+
+// app.listen(process.env.PORT || 3000, () => {
+//     console.log('Server is running');
+// });
